@@ -113,7 +113,7 @@ int main() {
     std::vector<std::shared_ptr<Vehicle>> vehicles;
     std::string backgroundImg;
     int nVehicles = 6;
-    createTrafficObjects_Paris(streets, intersections, vehicles, backgroundImg, nVehicles);
+    createTrafficObjects_NYC(streets, intersections, vehicles, backgroundImg, nVehicles);
 
     /* PART 2 : simulate traffic objects */
 
@@ -144,7 +144,7 @@ int main() {
     });
 
     // draw all objects in vector
-    Graphics *graphics = new Graphics();
+    auto *graphics = new Graphics();
     graphics->setBgFilename(backgroundImg);
     graphics->setTrafficObjects(trafficObjects);
     graphics->simulate();
