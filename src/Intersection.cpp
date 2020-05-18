@@ -137,12 +137,5 @@ void Intersection::simulate() // using threads + promises/futures + exceptions
 
 bool Intersection::trafficLightIsGreen() {
     // please include this part once you have solved the final project tasks
-    /*
-    if (_trafficLight.getCurrentPhase() == TrafficLightPhase::green)
-        return true;
-    else
-        return false;
-    */
-
-    return true; // makes traffic light permanently green
-} 
+    return _trafficLight.getCurrentPhase() == TrafficLightPhase::green;
+}
